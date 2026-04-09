@@ -53,6 +53,7 @@
     #hero-h1, .section-h2, #benefits-h2, #features-h2, #science-h2, #reviews-h2, #faq-h2, #comparison-h2 {
       font-family: 'Playfair Display', Georgia, serif !important;
       letter-spacing: -0.02em;
+      text-wrap: balance !important;
     }
 
     html, body {
@@ -217,10 +218,12 @@
     }
     /* Hide duplicates on desktop */
     .mobile-only { display: none !important; }
+    .mobile-img { display: none !important; }
 
     /* Mobile Announcement Ticker - Single Line Continuous */
     @media (max-width: 767px) {
       .mobile-only { display: flex !important; }
+      .mobile-img { display: block !important; max-width: 100%; height: auto; border-radius: 12px; margin: 20px auto !important; }
       #announcement-bar {
         overflow: hidden !important;
         white-space: nowrap !important;
@@ -416,12 +419,12 @@
 
 <div id="announcement-bar" role="banner">
   <div class="alert-badges">
-    <div class="alert-badge"><i class="fa-solid fa-bolt-lightning"></i> <strong>⚠️ LIMITED STOCK: 75% OFF — Today Only</strong></div>
+    <div class="alert-badge"><i class="fa-solid fa-bolt-lightning"></i> <strong>LIMITED STOCK: 75% OFF — Today Only</strong></div>
     <div class="alert-badge"><i class="fa-solid fa-shield-halved"></i> <strong>Iron-Clad 30-Day Money-Back Guarantee</strong></div>
     <div class="alert-badge"><i class="fa-solid fa-truck-fast"></i> <strong>FREE Priority Shipping — All 50 States</strong></div>
     
     <!-- Mobile Ticker Duplicates -->
-    <div class="alert-badge mobile-only"><i class="fa-solid fa-bolt-lightning"></i> <strong>⚠️ LIMITED STOCK: 75% OFF — Today Only</strong></div>
+    <div class="alert-badge mobile-only"><i class="fa-solid fa-bolt-lightning"></i> <strong>LIMITED STOCK: 75% OFF — Today Only</strong></div>
     <div class="alert-badge mobile-only"><i class="fa-solid fa-shield-halved"></i> <strong>Iron-Clad 30-Day Money-Back Guarantee</strong></div>
     <div class="alert-badge mobile-only"><i class="fa-solid fa-truck-fast"></i> <strong>FREE Priority Shipping — All 50 States</strong></div>
   </div>
@@ -441,7 +444,7 @@
     <div class="nav-cta">
       <a href="https://www.fasttrack37.com/PM7HK3TH/2MZPMFHW/?uid=41396" class="btn-primary">
         <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
-        One-Time Purchase — Get Flixy TV Now
+        Claim 75% OFF
       </a>
     </div>
   </div>
@@ -455,10 +458,10 @@
         Over 75,000 U.S. Homes Have Successfully Cut the Cord
       </div>
       <h1 id="hero-h1">
-        You're Losing <span class="highlight">$1,200+ a Year</span> to Greedy Cable Companies — And They're Counting on You Never Finding Out
+        Stop Being "Cable-Gouged" — Save <span class="highlight">$1,200/Year</span> and Join 75,000+ Smart Americans Smashing Monthly Bills Forever
       </h1>
-      <p class="hero-subtext"><strong>Every single month, you're being overcharged for standard entertainment.</strong> Cable giants like Comcast and Spectrum keep hiking prices while adding nothing but ads. You're paying for 500+ channels you never watch and high-priced "sports packages" that should be free.</p>
-      <p class="hero-subtext">Flixy TV's patented streaming technology is the only all-in-one solution that <strong>shuts down these monthly bills forever</strong> — by unlocking 1,000+ free channels and apps directly on your TV in crystal-clear 4K. <strong>No contract. No monthly fees. Just plug in and start saving in seconds.</strong></p>
+      <p class="hero-subtext"><strong>Tired of Spectrum & Comcast hiking your rates every 6 months?</strong> You're paying for 500+ channels you never turn on while greedy giants count on you never finding a way out.</p>
+      <p class="hero-subtext">Discover the FCC-compliant streaming technology that unlocks 1,000+ top live channels and apps in crystal-clear 4K—for a <strong>single, one-time payment</strong>. No monthly fees. Just plug in and cut the cord today.</p>
       <div class="hero-tagline">
         <span><i class="fa-solid fa-certificate" aria-hidden="true"></i> FCC Certified Safe</span>
         <span><i class="fa-solid fa-leaf" aria-hidden="true"></i> Zero Monthly Fees</span>
@@ -467,7 +470,7 @@
       <div class="hero-cta-group">
         <a href="https://www.fasttrack37.com/PM7HK3TH/2MZPMFHW/?uid=41396" class="btn-primary">
           <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
-          Zero Monthly Fees — Claim 75% OFF Now
+          Claim 75% OFF
         </a>
         <p class="hero-guarantee">
           <i class="fa-solid fa-lock" aria-hidden="true"></i>
@@ -476,7 +479,7 @@
       </div>
     </div>
     <div class="hero-img-col">
-      <img class="hero-product-img" src="images/flixytv.jpg" alt="Flixy TV Stick in 4K" width="480" height="480" loading="eager" />
+      <img class="hero-product-img" src="images/flixytv1.png" alt="Flixy TV Stick in 4K" width="480" height="480" loading="eager" />
     </div>
   </div>
 </section>
@@ -498,7 +501,7 @@
       </div>
       <div class="trust-badge">
         <div class="trust-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
-        <div class="trust-badge-text"><strong>4.9★ Rated</strong><span>75,000+ Verified Customers</span></div>
+        <div class="trust-badge-text"><strong>4.9/5 Rating</strong><span>75,000+ Verified Customers</span></div>
       </div>
       <div class="trust-badge">
         <div class="trust-icon"><i class="fa-solid fa-flag-usa" aria-hidden="true"></i></div>
@@ -522,7 +525,7 @@
       </div>
       <div class="stat-divider" aria-hidden="true"></div>
       <div class="stat-item">
-        <div class="stat-number">4.9★</div>
+        <div class="stat-number">4.9/5</div>
         <div class="stat-label">Average Customer Review</div>
       </div>
       <div class="stat-divider" aria-hidden="true"></div>
@@ -543,7 +546,7 @@
         <p class="section-body">Think about the last time you looked at your cable statement. <strong>Did it make you angry? It should.</strong> You've probably seen "regional sports fees," "HD technology fees," and "broadcast TV surcharges" that add up to $30-$50 before you even watch a single show. It's a legal monopoly designed to drain your bank account.</p>
         <p class="section-body">The truth is: <strong>Most of the content you pay $150+ for is actually available for free if you have the right technology.</strong> Flixy TV is that technology. It bypasses the greedy middleman and brings thousands of free channels and streaming apps directly to your TV. <strong>No more monthly bills. No more contracts. Just the entertainment you love for a one-time price. 20% to 75% savings — guaranteed.</strong></p>
         <div class="urgency-badge">
-          <i class="fa-solid fa-fire" aria-hidden="true"></i>
+
           <div class="urgency-text">
             <strong>12,400+ units sold this month in the USA.</strong>
             <span>Low Inventory: Hurry, stock is running extremely low!</span>
@@ -551,11 +554,11 @@
         </div>
         <a href="https://www.fasttrack37.com/PM7HK3TH/2MZPMFHW/?uid=41396" class="btn-primary">
           <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
-          No More Monthly Bills — Get 75% OFF
+          Claim 75% OFF
         </a>
       </div>
       <div class="benefits-img">
-        <img src="images/streaming.png" alt="Happy American Family watching TV" width="480" height="480" loading="lazy" />
+        <img src="images/imgi_96_MDFfSGVyb19GTElYWV9UVi1TdGljay0xLmpwZw-h_960.jpg" alt="Happy American Family watching TV" width="480" height="480" loading="lazy" />
       </div>
     </div>
   </div>
@@ -572,7 +575,7 @@
     </div>
     <div class="features-cta" style="text-align: center; margin-top: 30px;">
       <a href="https://www.fasttrack37.com/PM7HK3TH/2MZPMFHW/?uid=41396" class="btn-primary">
-        One-Time Payment — Claim 75% OFF
+        Claim 75% OFF
       </a>
     </div>
   </div>
@@ -587,22 +590,34 @@
     </div>
     <div class="reviews-grid">
       <div class="review-card">
-        <div class="review-image"><img src="images/review-1.png" alt="Michael Thompson" loading="lazy" /></div>
-        <div class="review-stars">★★★★★</div>
+        <div class="review-image"></div>
+        <div class="review-stars">
+          <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+          <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+          <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+          <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+          <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+        </div>
         <p class="review-body">"I was paying <strong>$185 a month</strong> for a basic cable package in Chicago. I thought it was just the cost of living. Plugged in Flixy TV and canceled my cable the next day. The picture is actually better (4K!) and I haven't missed a single game. I'm saving over $2,000 a year now!"</p>
         <div class="reviewer-name">Michael Thompson</div>
-        <div class="reviewer-location"><i class="fa-solid fa-check-circle"></i> Chicago, IL · Verified Purchase · <strong>Saved $185/Month</strong></div>
+        <div class="reviewer-location"><i class="fa-solid fa-check-circle"></i> Chicago, IL - Verified Purchase - <strong>Saved $185/Month</strong></div>
       </div>
       <div class="review-card">
-        <div class="review-image"><img src="images/review-2.png" alt="Sarah Jenkins" loading="lazy" /></div>
-        <div class="review-stars">★★★★★</div>
+        <div class="review-image"></div>
+        <div class="review-stars">
+          <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+          <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+          <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+          <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+          <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+        </div>
         <p class="review-body">"My cable company called me three times asking why I canceled. I told them I found a better way. Month 1: <strong>$120 saved</strong>. Month 3: <strong>$120 saved</strong>. It's ridiculous how much money I was throwing away for years. If you don't have this, you're basically giving your money to billionaire CEOs for free."</p>
         <div class="reviewer-name">Sarah Jenkins</div>
-        <div class="reviewer-location"><i class="fa-solid fa-check-circle"></i> Dallas, TX · Verified Purchase · <strong>Cord Cut Successfully</strong></div>
+        <div class="reviewer-location"><i class="fa-solid fa-check-circle"></i> Dallas, TX - Verified Purchase - <strong>Cord Cut Successfully</strong></div>
       </div>
     </div>
     <div class="reviews-stats">
-      <div class="review-stat"><div class="number">4.9★</div><div class="label">Top Rating</div></div>
+      <div class="review-stat"><div class="number">4.9/5</div><div class="label">Top Rating</div></div>
       <div class="review-stat"><div class="number">75,000+</div><div class="label">U.S. Homes</div></div>
       <div class="review-stat"><div class="number">$1,200</div><div class="label">Avg Yearly Savings</div></div>
     </div>
@@ -614,6 +629,7 @@
     <div class="features-header">
       <div class="section-label">WHY THIS DEVICE CHANGES EVERYTHING</div>
       <h2 id="features-h2" class="section-h2">6 Ways Flixy TV Kills Your Monthly Cable Bill Instantly</h2>
+      <img src="images/stream.jpg" alt="Streaming Movie Service" class="mobile-img" />
     </div>
     <div class="features-grid">
       <div class="feature-card">
@@ -628,8 +644,8 @@
       </div>
       <div class="feature-card">
         <div class="feature-icon-wrap"><i class="fa-solid fa-filter"></i></div>
-        <div class="feature-title">4K Ultra-HD Decoder</div>
-        <p class="feature-desc">Advanced AI-powered chip optimizes your stream for crystal clear 4K resolution, even on older TV models.</p>
+        <div class="feature-title">Crystal 4K Decoding</div>
+        <p class="feature-desc">Our custom-engineered AI chip optimizes every pixel for stunning 4K detail, making even older movies look like they were filmed yesterday.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
@@ -647,9 +663,7 @@
         <p class="feature-desc">At average cable costs, Flixy TV pays for its full purchase price in less than 4 weeks. After that, it's pure profit.</p>
       </div>
     </div>
-    <div style="margin-top: 50px; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
-      <img src="images/4k-hd-quality.png" alt="4K HD Quality" width="100%" style="display: block;" loading="lazy" />
-    </div>
+
   </div>
 </section>
 
@@ -661,14 +675,14 @@
     </div>
     <div class="benefits-layout">
       <div class="benefits-img">
-        <img src="images/imgi_9_bc51e8a5eae2466dc6d7e9c6c3f5b40c.png" alt="Flixy TV Unlock" width="600" height="600" loading="lazy" />
+        <img src="images/imgi_45_MV9QbHVnLUl0LUluLmpwZw-w_700.jpg" alt="Flixy TV Unlock" width="600" height="600" loading="lazy" />
       </div>
       <div class="benefits-text">
         <h3 class="section-h2">The 3-Step Process to Total TV Freedom</h3>
-        <p class="section-body"><strong>Step 1: Digital Signal Aggregation</strong><br/>Flixy TV uses a unique signal processor that identifies and pulls thousands of free, high-quality broadcasts and streaming signals into one easy menu.</p>
-        <p class="section-body"><strong>Step 2: Ad-Block & Speed Filter</strong><br/>The on-board AI filters out intrusive tracking and bloating scripts from streaming apps, making your Wi-Fi run faster and your shows load instantly.</p>
-        <p class="section-body"><strong>Step 3: 4K Upscalling</strong><br/>Our proprietary chip takes standard signals and upscales them to the highest possible resolution your TV supports, ensuring a premium theater experience at home.</p>
-        <a href="https://www.fasttrack37.com/PM7HK3TH/2MZPMFHW/?uid=41396" class="btn-primary" style="margin-top: 24px;"><i class="fa-solid fa-cart-shopping"></i> One-Time Payment — 75% OFF</a>
+        <p class="section-body"><strong>Step 1: Smart Signal Capture</strong><br/>Flixy TV’s intelligent processor identifies and pulls thousands of high-definition broadcasts and premium streaming signals into one seamless interface.</p>
+        <p class="section-body"><strong>Step 2: Ad-Shield & Performance Filter</strong><br/>The on-board AI blocks intrusive tracking scripts and bloatware from popular apps, ensuring your Wi-Fi stays fast and your shows load instantly.</p>
+        <p class="section-body"><strong>Step 3: Full 4K Upscaling</strong><br/>Our proprietary chip takes standard signals and upscales them to the highest resolution your TV supports, delivering a theater-grade experience in every room.</p>
+        <a href="https://www.fasttrack37.com/PM7HK3TH/2MZPMFHW/?uid=41396" class="btn-primary" style="margin-top: 24px;"><i class="fa-solid fa-cart-shopping"></i> Claim 75% OFF</a>
       </div>
     </div>
   </div>
